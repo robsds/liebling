@@ -255,6 +255,7 @@
     margin: 30px 0;
     border: 0;
     border-top: 1px solid var(--secondary-subtle-color);
+    // border-top: 1px solid darken($light-green, 5%);
 
     @include respond-to('medium') {
       margin: 50px 0;
@@ -269,7 +270,9 @@
       height: 10px;
       border-radius: 50%;
       background-color: var(--secondary-subtle-color);
+      // background-color: darken($light-green, 5%);
       @include bs(0 0 0 10px var(--background-color));
+      // @include bs(0 0 0 10px $white);
       @include transform(translate(-50%,-50%));
 
       @include respond-to('medium') {
@@ -304,6 +307,7 @@
       top: 0;
       left: 0;
       color: var(--primary-foreground-color);
+      // color: darken($light-green, 10%);
       line-height: 1;
       font-size: 2.625rem;
 
@@ -359,6 +363,7 @@
   code {
     display: inline-block;
     color: var(--link-color);
+    // color: $dark;
     font-size: 0.9rem;
     padding: 0 5px;
     border-radius: 5px;

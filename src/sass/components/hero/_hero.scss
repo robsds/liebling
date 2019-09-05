@@ -5,6 +5,7 @@
   overflow: hidden;
   padding: 100px 0 75px;
   background-color: var(--secondary-subtle-color);
+  // background-color: $light-green;
   @extend .content-centered;
 
   @include respond-to('medium') {
