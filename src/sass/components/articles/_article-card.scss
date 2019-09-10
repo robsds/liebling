@@ -44,7 +44,7 @@
 
     .m-article-card__info {
       background-color: var(--secondary-subtle-color);
-      // background-color: $light-green;
+      // background-color: $light;
     }
 
     .m-article-card__title {
@@ -96,7 +96,6 @@
   height: 200px;
   border-radius: 10px 10px 0 0;
   background-color: var(--secondary-subtle-color);
-  // background-color: $light-green;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -217,7 +216,6 @@
   top: $mobile-space;
   left: $mobile-space;
   color: var(--link-color);
-  // color: $dark-green;
   letter-spacing: 0.2px;
   font-size: 0.875rem;
   font-weight: 600;
