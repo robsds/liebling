@@ -4,13 +4,13 @@ const GhostAdminApi = require('@tryghost/admin-api');
 (async function main() {
   try {
     const api = new GhostAdminApi({
-      url: process.env.GHOST_ADMIN_API_URL,
-      key: process.env.GHOST_ADMIN_API_KEY,
+      url: process.env.url,
+      key: process.env.key,
       version: 'canary'
     });
 
     // Deploy it to the configured site
-    await api.themes.upload({file: '../liebling.zip'});
+    await api.themes.upload({file: '../liebling-themindsetbox.zip'});
     console.log('Theme successfully uploaded.');
   } catch (err) {
     console.error(err);
