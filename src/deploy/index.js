@@ -1,4 +1,8 @@
-require('dotenv').config()
+// require('dotenv').config()
+
+const path = require('path');
+const core = require('@actions/core');
+const exec = require('@actions/exec');
 const GhostAdminApi = require('@tryghost/admin-api');
 
 (async function main() {
