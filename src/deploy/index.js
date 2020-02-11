@@ -10,7 +10,7 @@ const GhostAdminApi = require('@tryghost/admin-api');
     });
 
     // Deploy it to the configured site
-    await api.themes.upload({file: 'liebling-themindsetbox.zip'});
+    await api.themes.upload({file: './src/liebling-themindsetbox.zip'});
     console.log('Theme successfully uploaded.');
   } catch (err) {
     console.error(err);
