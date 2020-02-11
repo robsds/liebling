@@ -8,14 +8,14 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@master
-      - uses: actions/setup-node@v1
-        with:
-          node-version: '10.x'
-      - run: npm install
-        working-directory: ./src
-      - name: Build theme
-        working-directory: ./src
-        run: npm run production
+      # - uses: actions/setup-node@v1
+      #   with:
+      #     node-version: '10.x'
+      # - run: npm install
+      #   working-directory: ./src
+      # - name: Build theme
+      #   working-directory: ./src
+      #   run: npm run production
       - name: 'Deploy Ghost Theme'
         run: node ./src/deploy/index.js
         env:
