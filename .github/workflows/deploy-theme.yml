@@ -13,11 +13,9 @@ jobs:
           node-version: '10.x'
       - run: npm install
         working-directory: ./src
-      # - name: Build theme
-      #   working-directory: ./src
-      #   run: npm run production
-      - name: 'Deploy Ghost Theme'
-        run: node ./src/deploy/index.js
+      - name: Build and deploy the theme
+        working-directory: ./src
+        run: npm run deploy
         env:
-          url: ${{ secrets.GHOST_ADMIN_API_URL }}
-          key: ${{ secrets.GHOST_ADMIN_API_KEY }}
+          GHOST_ADMIN_API_URL: ${{ secrets.GHOST_ADMIN_API_URL }}
+          GHOST_ADMIN_API_KEY: ${{ secrets.GHOST_ADMIN_API_KEY }}
